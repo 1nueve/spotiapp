@@ -8,6 +8,8 @@ import { ArtistaComponent } from './components/artista/artista.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {RouterModule} from '@angular/router';
 
+import { HttpClientModule } from '@angular/common/http';
+
 // Importar Rutas
 
 import {ROUTES} from './app.routes';
@@ -22,6 +24,7 @@ import {ROUTES} from './app.routes';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(ROUTES, {useHash:true})
   ],
   providers: [],
